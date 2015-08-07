@@ -1,0 +1,118 @@
+1 DATA "I LOVE KALE!"
+2 DATA "SCAVENGING IS DA BOMB!"
+3 DATA "GISHWHES FOREVER!"
+4 DATA "SUPERNATURAL ROCKS!"
+104 DATA "DINOMITE"
+105 DATA ""
+106 DATA "                       MMMMMM"
+107 DATA "                  MMMMMMMMMMMMM"
+108 DATA "               M7..MMMMMMMMMMMM"
+109 DATA "              MMMMMMMMMMMMMMMN"
+110 DATA "            8MMMMMMMMMMMMMMM"
+111 DATA "            MMMMMMMMMM"
+112 DATA "            MMMMMMMMMMMMMMMMMM7$"
+113 DATA "            MMMMMMMMMMMMMMMMMMMM"
+114 DATA "            MMMMMMMMMMMMMMMMMMM"
+115 DATA "           O NMMMMMMMMM"
+116 DATA "            D 8MMMMM"
+117 DATA "             MMMMMMMM8"
+118 DATA "           $$ZMMMMMMMMZ  N"
+119 DATA "          MZMMMMMN+MMMMM7M7"
+120 DATA "         N$$$MMMMMMMMMM"
+121 DATA "        M$O$$MMMMMMMMMMD"
+122 DATA "        Z$$$$   N O Z. 7"
+123 DATA "        $M$OM8$$$$$$$$DN"
+124 DATA "        MM     $$$$$$$M"
+125 DATA "         M    O        O O"
+126 DATA "                       7"
+128 DATA "ELOPUS"
+129 DATA ""
+130 DATA "                 7M"
+131 DATA "             ?MM"
+132 DATA "            7MM"
+133 DATA "             MM"
+134 DATA "          M  MMMM"
+135 DATA "          M MMMMMMMMMMMM     D"
+136 DATA "            NMMMMMMM.MMMMM  M  N"
+137 DATA "      ?  M    MMMMMMMMMMMM  MM"
+138 DATA "         MM     MMMMMMMMMM? ?MM"
+139 DATA "        MMMM?MM MMMMMMMMMM   MMMMM"
+140 DATA "        M7 MMMMMMMMMMMMMMM7MMMMMMMMM"
+141 DATA "      DMMMMMNNMMMMMMMMMMMMMMMMM  7MM"
+142 DATA "     MMMMMMMMMM8MMMMMMMMMMMMM  M  MM"
+143 DATA "    NMD     7MMMMM7  MMMM?MMMMM DZ"
+144 DATA "    MM?    MMMM?      MMMM  MMM"
+145 DATA "    ?MDMM MMM      D    MMM  MM"
+146 DATA "       M  MM?     M ?   MMM  M7"
+147 DATA "          ZMM      M    MM?  MM    $"
+148 DATA "            MMM7    MMMMM?    MM NM M?"
+149 DATA "                M?"
+150 DATA "               D"
+151 DATA "FOGRAT"
+152 DATA ""
+153 DATA ""
+154 DATA "                         7"
+155 DATA "                        Z.=Z"
+156 DATA "                        8.,N?M7"
+158 DATA "                         MMMMMO7"
+159 DATA "                        MMMMMMDMMM"
+160 DATA "                      MMMMMMMMMMMMM$"
+161 DATA "                    NMMMMMMMMMMMMMMMO"
+162 DATA "                  ?MMMMMMMMMMMMMMMMMN"
+163 DATA "                 NMMMMMMMMMMMMM 7$"
+164 DATA "                MMMMMMMMMMMMMMM"
+165 DATA "              7MMMMMMMMMMMMMMM8"
+166 DATA "             MMMMNMMMMMMMMMMMM?"
+167 DATA "           MM NMMM8MMMMMMMMMMM"
+168 DATA "         8M MM$OMMMMMMMM?MMMM"
+169 DATA "       DMOMMMMMMMMMM77MMMMMD"
+170 DATA "     O87MMMMMMN++NMMMMMMMM"
+171 DATA "  NNDMMMMMMMMMMMMMMMMMMM"
+172 DATA "M7MMMMMM7         OM8"
+173 DATA " MMMM8            7M"
+174 DATA "                  MMMMMN"
+175 DATA "WOOSTER"
+176 DATA "                               OO"
+177 DATA "                              ZMM 7"
+178 DATA "                             OMMMM8"
+179 DATA "                            NMMMMM"
+180 DATA "       OMMMMMMMZ            MMMMMM7"
+181 DATA "     ZMMMMMMMMMMM7         MMMMMMMM"
+182 DATA "    DM D$MMMMMMMMM7       ZNMMMMMMMN"
+183 DATA "   ON $ MNMMMMMMMMM        MMMMMMMMM"
+184 DATA "  7O   O MMMMMMMMMM$      NMMMMMMMMM"
+185 DATA "        Z8MMMMMMMMMMMMMMMMMMMMMMMMMM"
+186 DATA "        $8ZMMMMMMMMMMMMMMMMMMMMMMMMM"
+187 DATA "         O 8 MMMMMMMMMMMMMMMMMMMMMMM"
+188 DATA "           N ZMMMMMMMMMMMMMMMMMMMMM"
+189 DATA "           $ $MMMMMMMMMMMMMMMMMMMM$"
+190 DATA "              N MMMMMMMMMMMMMMMMM"
+191 DATA "              7 8MMMMMMMMMMMM8"
+192 DATA "                  MMMMMMMMMM"
+193 DATA "                   MMMMMMMMM"
+194 DATA "                    8MMZ MMM"
+195 DATA "                    NM7   ?M"
+196 DATA "                    N       D"
+197 DATA "                  ODMMNO  7ZMD8DZ"
+210 NUMPHRASES = 4
+220 I=INT(RND(1)*NUMPHRASES)
+230 IF I=0 GOTO 270
+240 FOR J=1 TO I
+250 READ N$
+260 NEXT J
+270 READ PHRASE$
+280 IF I=NUMPHRASES-1 GOTO 320
+290 FOR J=I+1 TO NUMPHRASES-1
+300 READ N$
+310 NEXT J
+320 I=INT(RND(1)*4)
+330 IF I=0 GOTO 370
+340 FOR J=1 TO 23*I
+350 READ N$
+360 NEXT J
+370 READ NAME$
+380 FOR K=1 TO 22
+390 READ LINE$
+400 PRINT LINE$
+410 NEXT K
+420 PRINT NAME$+" SAYS: "+PHRASE$
